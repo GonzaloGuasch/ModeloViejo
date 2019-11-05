@@ -16,7 +16,7 @@ class User(
         @ManyToMany
         var orderhistory: MutableSet<Book> = mutableSetOf(),
         @Id @GeneratedValue
-        var id: Long
+        var id: Long = 0
 ){
 
     fun addBookToWishList(aBook: Book) {  this.wishlist.add(aBook) }
