@@ -16,4 +16,5 @@ class BookService(private val bookRepository: BookRepository) {
     fun findAll() = bookRepository.findAll()
 
     fun findByName(name : String) = bookRepository.findByName(name)
+
 }
